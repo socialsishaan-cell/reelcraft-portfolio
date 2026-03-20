@@ -16,6 +16,8 @@ export default function VideoCard({ project, index = 0 }) {
     'social-media': 'Social Media',
   };
 
+  const isDriveUrl = project.videoUrl && project.videoUrl.includes('drive.google.com');
+
   const handleMouseMove = (e) => {
     if (!cardRef.current) return;
     const rect = cardRef.current.getBoundingClientRect();
@@ -30,16 +32,29 @@ export default function VideoCard({ project, index = 0 }) {
 
   const handleMouseLeave = (e) => {
     setTilt({ rotateX: 0, rotateY: 0 });
-    const video = e.currentTarget.querySelector('video');
-    if (video) {
-      video.pause();
-      video.currentTime = 0;
+    if (!isDriveUrl) {
+      const video = e.currentTarget.querySelector('video');
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
     }
   };
 
   const handleMouseEnter = (e) => {
-    const video = e.currentTarget.querySelector('video');
-    if (video) video.play().catch(() => {});
+    if (!isDriveUrl) {
+      const video = e.currentTarget.querySelector('video');
+      if (video) video.play().catch(() => {});
+    }
+  };
+
+  // Convert Drive preview URL to embeddable thumbnail
+  const getDriveThumbnail = (url) => {
+    const match = url.match(/\/file\/d\/([^/]+)/);
+    if (match) {
+      return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w640`;
+    }
+    return null;
   };
 
   return (
@@ -68,13 +83,21 @@ export default function VideoCard({ project, index = 0 }) {
           data-cursor="View"
         >
           <div className="video-card-thumbnail">
-            <video
-              src={project.videoUrl}
-              muted
-              loop
-              playsInline
-              preload="metadata"
-            />
+            {isDriveUrl ? (
+              <img
+                src={getDriveThumbnail(project.videoUrl)}
+                alt={project.title}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            ) : (
+              <video
+                src={project.videoUrl}
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+            )}
             <div className="video-card-overlay">
               <div className="play-icon" />
             </div>
