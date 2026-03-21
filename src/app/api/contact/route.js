@@ -77,23 +77,31 @@ export async function POST(request) {
       );
     }
 
-    // Send WhatsApp notification via CallMeBot (if configured)
-    if (process.env.CALLMEBOT_API_KEY && process.env.CALLMEBOT_PHONE) {
-      const whatsappMessage = encodeURIComponent(
+    // Send Telegram notification
+    if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID) {
+      const telegramMessage =
         `🎬 *New ReelCraft Inquiry*\n\n` +
         `*Name:* ${name}\n` +
         `*Email:* ${email}\n` +
         `*Subject:* ${subject}\n\n` +
-        `*Message:*\n${message}`
-      );
+        `*Message:*\n${message}`;
 
       try {
         await fetch(
-          `https://api.callmebot.com/whatsapp.php?phone=${process.env.CALLMEBOT_PHONE}&text=${whatsappMessage}&apikey=${process.env.CALLMEBOT_API_KEY}`
+          `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_id: process.env.TELEGRAM_CHAT_ID,
+              text: telegramMessage,
+              parse_mode: 'Markdown',
+            }),
+          }
         );
-      } catch (whatsappError) {
-        console.error('WhatsApp error:', whatsappError);
-        // Don't fail the request if WhatsApp fails
+      } catch (telegramError) {
+        console.error('Telegram error:', telegramError);
+        // Don't fail the request if Telegram fails
       }
     }
 
