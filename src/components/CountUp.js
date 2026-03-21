@@ -5,7 +5,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 
 export default function CountUp({ target, suffix = '', duration = 2 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '0px' });
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, {
     duration: duration * 1000,
