@@ -245,5 +245,31 @@
     "date": "2023-09-10",
     "tags": ["Retail", "Promo", "Walkthrough"],
     "featured": false
+  },
+  {
+    "id": "20",
+    "title": "Waffle Forever – The Art of the Iron",
+    "description": "A mouth-watering behind-the-scenes reel capturing the craft of waffle-making at Waffle Forever — from batter to golden perfection.",
+    "longDescription": "This behind-the-scenes food reel takes viewers into the heart of Waffle Forever's kitchen, showcasing the satisfying process of crafting the perfect waffle. From the smooth pour of batter onto a sizzling iron to the golden-brown reveal, every step is captured with appetizing close-ups and warm lighting. The edit highlights the artisan care behind each order, making the viewer feel the crunch and taste the sweetness through the screen. A perfect example of food content that drives cravings and foot traffic.",
+    "videoUrl": "https://drive.google.com/file/d/1utR_fyaysLlwxvlag22hQT_Sc65UEh_g/preview",
+    "thumbnailUrl": "/thumbnails/thumb-20.jpg",
+    "category": "commercial",
+    "client": "Waffle Forever",
+    "date": "2023-08-15",
+    "tags": ["Food", "Behind The Scenes", "Restaurant"],
+    "featured": false
+  },
+  {
+    "id": "21",
+    "title": "Waffle Forever – Sweet Temptations",
+    "description": "A cinematic food showcase of Waffle Forever's signature creations — drizzled, topped, and styled to perfection.",
+    "longDescription": "Sweet Temptations is a visually indulgent food reel that puts Waffle Forever's signature waffles center stage. Each frame is composed like a food photograph — showcasing golden waffles adorned with chocolate drizzles, fresh fruits, and whipped cream. The warm, inviting color palette and shallow depth-of-field create an irresistible aesthetic that elevates the brand's social media presence. Quick, rhythmic cuts between different waffle varieties keep the content dynamic and shareable.",
+    "videoUrl": "https://drive.google.com/file/d/1ga0RQevx0kfMWcuJ0WaPIknXi-SFyc9S/preview",
+    "thumbnailUrl": "/thumbnails/thumb-21.jpg",
+    "category": "commercial",
+    "client": "Waffle Forever",
+    "date": "2023-07-20",
+    "tags": ["Food", "Promo", "Social Media"],
+    "featured": false
   }
 ]
