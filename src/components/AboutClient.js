@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
 import MagneticButton from '@/components/MagneticButton';
@@ -35,7 +36,14 @@ export default function AboutClient() {
         <div className="about-hero">
           <ScrollReveal>
             <div className="about-image">
-              <div className="about-image-placeholder">🎬</div>
+              <Image
+                src="/profile.jpeg"
+                alt="Ishaan — Video Editor & Visual Storyteller"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 1024px) 400px, 50vw"
+                priority
+              />
             </div>
           </ScrollReveal>
           <div className="about-text">
