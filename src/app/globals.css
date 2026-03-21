@@ -643,7 +643,7 @@ input, textarea { font-family: inherit; outline: none; cursor: none; }
 /* ========== VIDEO CARD ========== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }
 
@@ -674,7 +674,7 @@ input, textarea { font-family: inherit; outline: none; cursor: none; }
 
 .video-card-thumbnail {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   overflow: hidden;
   background: var(--bg-tertiary);
 }
@@ -829,7 +829,9 @@ input, textarea { font-family: inherit; outline: none; cursor: none; }
 .video-player-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  max-width: 400px;
+  margin: 0 auto;
+  aspect-ratio: 9 / 16;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: #000;
