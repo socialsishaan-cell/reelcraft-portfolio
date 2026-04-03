@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ClientLayout from '@/components/ClientLayout';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'ReelCraft | Video Editor Portfolio',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <Footer />
         </ClientLayout>
+        <Analytics />
       </body>
     </html>
   );
