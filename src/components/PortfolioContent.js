@@ -5,14 +5,16 @@ import { useSearchParams } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import VideoCard from '@/components/VideoCard';
 import CategoryFilter from '@/components/CategoryFilter';
+import PhotoGallery from '@/components/PhotoGallery';
 
 const categories = [
   { value: 'all', label: 'All Projects' },
   { value: 'commercial', label: 'Commercials' },
   { value: 'music-video', label: 'Music Videos' },
-  { value: 'short-film', label: 'Short Films' },
   { value: 'corporate', label: 'Corporate' },
   { value: 'social-media', label: 'Social Media' },
+  { value: 'event', label: 'Events' },
+  { value: 'photography', label: 'Photography' },
 ];
 
 export default function PortfolioContent() {
@@ -23,12 +25,19 @@ export default function PortfolioContent() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const isPhotography = activeCategory === 'photography';
+
   useEffect(() => {
     const cat = searchParams.get('category');
     if (cat) setActiveCategory(cat);
   }, [searchParams]);
 
   useEffect(() => {
+    if (isPhotography) {
+      setLoading(false);
+      return;
+    }
+
     const fetchProjects = async () => {
       setLoading(true);
       try {
@@ -48,7 +57,7 @@ export default function PortfolioContent() {
     };
 
     fetchProjects();
-  }, [activeCategory]);
+  }, [activeCategory, isPhotography]);
 
   return (
     <section className="section" style={{ paddingTop: 0 }}>
@@ -59,10 +68,36 @@ export default function PortfolioContent() {
           onCategoryChange={setActiveCategory}
         />
 
-        {loading ? (
-          <div className="loading-container">
-            <div className="spinner" />
-          </div>
+        {isPhotography ? (
+          <AnimatePresence mode="wait">
+            <motion.div
+              key="photography"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <PhotoGallery />
+            </motion.div>
+          </AnimatePresence>
+        ) : loading ? (
+          <motion.div
+            key="skeleton"
+            className="projects-grid"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="video-card skeleton-card">
+                <div className="video-thumbnail skeleton-pulse" />
+                <div className="video-info">
+                  <div className="skeleton-text skeleton-pulse" style={{ width: '60%' }} />
+                  <div className="skeleton-text skeleton-pulse" style={{ width: '40%', marginTop: '8px' }} />
+                </div>
+              </div>
+            ))}
+          </motion.div>
         ) : projects.length === 0 ? (
           <motion.div
             initial={{ opacity: 0 }}

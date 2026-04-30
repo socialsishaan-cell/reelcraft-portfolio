@@ -1,11 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
+import { useEffect } from 'react';
 import VideoCard from '@/components/VideoCard';
 import CountUp from '@/components/CountUp';
 import MagneticButton from '@/components/MagneticButton';
-import GradientBlobs from '@/components/GradientBlobs';
+import ClientMarquee from '@/components/ClientMarquee';
+import ServicesBento from '@/components/ServicesBento';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const wordAnimation = {
@@ -31,13 +34,36 @@ export default function HomeClient({ featured }) {
   const heroLine1 = ['Crafting', 'Stories'];
   const heroLine2 = ['Frame', 'by', 'Frame'];
 
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { clientX, clientY } = e;
+      mouseX.set(clientX);
+      mouseY.set(clientY);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, [mouseX, mouseY]);
+
   return (
     <>
       {/* HERO */}
       <section className="hero">
-        <div className="hero-bg">
-          <GradientBlobs />
-        </div>
+        <motion.div
+          className="hero-spotlight"
+          style={{
+            background: useMotionTemplate`
+              radial-gradient(
+                800px circle at ${mouseX}px ${mouseY}px,
+                rgba(155, 122, 240, 0.15),
+                transparent 80%
+              )
+            `,
+          }}
+        />
         <div className="container">
           <div className="hero-content">
             <motion.div
@@ -99,33 +125,48 @@ export default function HomeClient({ featured }) {
             </motion.div>
 
             <motion.div
+              className="scroll-indicator"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 2 }}
+            >
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                ↓
+              </motion.div>
+            </motion.div>
+
+            <motion.div
               className="hero-stats"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
             >
-              <div className="hero-stat">
-                <h3 className="gradient-text">
-                  <CountUp target={50} suffix="+" />
-                </h3>
-                <p>Projects Completed</p>
-              </div>
-              <div className="hero-stat">
-                <h3 className="gradient-text">
-                  <CountUp target={3} suffix="+" />
-                </h3>
-                <p>Years Experience</p>
-              </div>
-              <div className="hero-stat">
-                <h3 className="gradient-text">
-                  <CountUp target={10} suffix="+" />
-                </h3>
-                <p>Happy Clients</p>
-              </div>
+              {[
+                { count: 60, label: 'Projects Completed' },
+                { count: 3, label: 'Years Experience' },
+                { count: 15, label: 'Happy Clients' }
+              ].map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  className="hero-stat-card glass-panel"
+                  whileHover={{ y: -5, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <h3 className="gradient-text">
+                    <CountUp target={stat.count} suffix="+" />
+                  </h3>
+                  <p>{stat.label}</p>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </div>
       </section>
+
+      <ClientMarquee />
 
       {/* FEATURED PROJECTS */}
       <section className="featured-section">
@@ -154,22 +195,28 @@ export default function HomeClient({ featured }) {
         </div>
       </section>
 
+      <ServicesBento />
+      
+      <TestimonialCarousel />
+
       {/* CTA */}
       <section className="section" style={{ background: 'var(--bg-secondary)', textAlign: 'center' }}>
         <div className="container">
           <ScrollReveal>
-            <span className="badge badge-accent">Let&apos;s Collaborate</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, marginTop: '16px', marginBottom: '16px', letterSpacing: '-0.02em' }}>
-              Have a project in mind?
-            </h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '500px', margin: '0 auto 32px' }}>
-              I&apos;m always open to discussing new projects, creative ideas, and opportunities to bring your vision to life.
-            </p>
-            <MagneticButton>
-              <Link href="/contact" className="btn btn-primary btn-lg" data-cursor="Let's Talk">
-                Start a Conversation →
-              </Link>
-            </MagneticButton>
+            <div className="cta-wrapper">
+              <span className="badge badge-accent">Let&apos;s Collaborate</span>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, marginTop: '16px', marginBottom: '16px', letterSpacing: '-0.02em' }}>
+                Have a project in mind?
+              </h2>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '500px', margin: '0 auto 32px' }}>
+                I&apos;m always open to discussing new projects, creative ideas, and opportunities to bring your vision to life.
+              </p>
+              <MagneticButton>
+                <Link href="/contact" className="btn btn-primary btn-lg" data-cursor="Let's Talk">
+                  Start a Conversation →
+                </Link>
+              </MagneticButton>
+            </div>
           </ScrollReveal>
         </div>
       </section>

@@ -35,12 +35,13 @@ export default function AboutClient() {
       <div className="container">
         <div className="about-hero">
           <ScrollReveal>
-            <div className="about-image">
+            <div className="about-image profile-image-container">
+              <div className="gradient-border" />
               <Image
                 src="/profile.jpeg"
                 alt="Ishaan — Video Editor & Visual Storyteller"
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'cover', borderRadius: 'calc(var(--radius-xl) - 2px)' }}
                 sizes="(max-width: 1024px) 400px, 50vw"
                 priority
               />
@@ -113,7 +114,13 @@ export default function AboutClient() {
                   whileHover={{ y: -4, boxShadow: '0 0 40px rgba(155, 122, 240, 0.15)' }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="skill-icon">{skill.icon}</div>
+                  <motion.div
+                    className="skill-icon"
+                    animate={{ y: [0, -4, 0] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: i * 0.1 }}
+                  >
+                    {skill.icon}
+                  </motion.div>
                   <h3>{skill.title}</h3>
                   <p>{skill.desc}</p>
                 </motion.div>

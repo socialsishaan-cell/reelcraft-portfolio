@@ -35,14 +35,15 @@ export default function CategoryFilter({ categories, activeCategory, onCategoryC
         }}
       />
       {categories.map(cat => (
-        <button
+        <motion.button
           key={cat.value}
           className={`category-btn ${activeCategory === cat.value ? 'active' : ''}`}
           onClick={() => onCategoryChange(cat.value)}
           id={`filter-${cat.value}`}
+          whileTap={{ scale: 0.95 }}
         >
           {cat.label}
-        </button>
+        </motion.button>
       ))}
     </div>
   );

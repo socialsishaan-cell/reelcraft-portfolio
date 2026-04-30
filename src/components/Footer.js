@@ -17,8 +17,8 @@ export default function Footer() {
       <div className="footer-glow" aria-hidden="true" />
       <div className="footer-divider-animated" aria-hidden="true" />
       <div className="container">
-        <ScrollReveal>
-          <div className="footer-grid">
+        <div className="footer-grid">
+          <ScrollReveal delay={0.1}>
             <div className="footer-brand">
               <h3><span className="gradient-text">REEL</span>CRAFT</h3>
               <p>
@@ -26,7 +26,9 @@ export default function Footer() {
                 color grading, and motion design. Let&apos;s bring your vision to life.
               </p>
             </div>
+          </ScrollReveal>
 
+          <ScrollReveal delay={0.2}>
             <div className="footer-col">
               <h4>Navigation</h4>
               <Link href="/">Home</Link>
@@ -34,24 +36,28 @@ export default function Footer() {
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
             </div>
+          </ScrollReveal>
 
+          <ScrollReveal delay={0.3}>
             <div className="footer-col">
               <h4>Categories</h4>
               <Link href="/portfolio?category=commercial">Commercial</Link>
               <Link href="/portfolio?category=music-video">Music Videos</Link>
-              <Link href="/portfolio?category=short-film">Short Films</Link>
               <Link href="/portfolio?category=corporate">Corporate</Link>
-              <Link href="/portfolio?category=social-media">Social Media</Link>
+              <Link href="/portfolio?category=event">Events</Link>
+              <Link href="/portfolio?category=photography">Photography</Link>
             </div>
+          </ScrollReveal>
 
+          <ScrollReveal delay={0.4}>
             <div className="footer-col">
               <h4>Connect</h4>
               <a href="mailto:socialsishaan@gmail.com">socialsishaan@gmail.com</a>
               <a href="tel:+919819981441">+91 98199 81441</a>
               <a href="#">Mumbai, India</a>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} ReelCraft. All rights reserved.</p>

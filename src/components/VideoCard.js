@@ -14,6 +14,7 @@ export default function VideoCard({ project, index = 0 }) {
     'short-film': 'Short Film',
     'corporate': 'Corporate',
     'social-media': 'Social Media',
+    'event': 'Event',
   };
 
   const isDriveUrl = project.videoUrl && project.videoUrl.includes('drive.google.com');
@@ -82,13 +83,19 @@ export default function VideoCard({ project, index = 0 }) {
           style={{ transformStyle: 'preserve-3d', perspective: '1000px' }}
           data-cursor="View"
         >
+          <div className="card-shine" />
           <div className="video-card-thumbnail">
             {isDriveUrl ? (
-              <img
-                src={getDriveThumbnail(project.videoUrl)}
-                alt={project.title}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
+              <>
+                <div className="skeleton-pulse" style={{ position: 'absolute', inset: 0, zIndex: -1 }} />
+                <img
+                  src={getDriveThumbnail(project.videoUrl)}
+                  alt={project.title}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  referrerPolicy="no-referrer"
+                  loading="lazy"
+                />
+              </>
             ) : (
               <video
                 src={project.videoUrl}
@@ -99,7 +106,11 @@ export default function VideoCard({ project, index = 0 }) {
               />
             )}
             <div className="video-card-overlay">
-              <div className="play-icon" />
+              <motion.div
+                className="play-icon"
+                whileHover={{ scale: 1.1, boxShadow: '0 0 20px rgba(155, 122, 240, 0.6)' }}
+                whileTap={{ scale: 0.9 }}
+              />
             </div>
             <div className="video-card-category">
               <span className="badge badge-accent">

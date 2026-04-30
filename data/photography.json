@@ -1,0 +1,154 @@
+[
+  {
+    "id": "p1",
+    "title": "Golden Hour Portrait",
+    "description": "A warm, natural-light portrait capturing golden hour radiance and soft skin tones.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1Il6W0zOSG7vAx2u9UQF0vcp0E85h1WCb",
+    "category": "portrait",
+    "tags": ["Portrait", "Golden Hour", "Natural Light"]
+  },
+  {
+    "id": "p2",
+    "title": "The Gaze",
+    "description": "An intimate close-up portrait with shallow depth of field, drawing focus to expressive eyes.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1Ab6lav_En2yEu6FhpY1iBL58zptJg_pI",
+    "category": "portrait",
+    "tags": ["Portrait", "Close-up", "Cinematic"]
+  },
+  {
+    "id": "p3",
+    "title": "Street Light Stories",
+    "description": "A moody street portrait using ambient urban lighting to create dramatic shadows and highlights.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1i3io6spR7Duszgy1uWyA4-FbooTr5B3J",
+    "category": "portrait",
+    "tags": ["Street", "Portrait", "Moody"]
+  },
+  {
+    "id": "p4",
+    "title": "Frame Within a Frame",
+    "description": "A creative composition using environmental elements to frame the subject in an artful, layered portrait.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1ZM_sn1zDMa2CcZnAGf1eBo3yjUtI94XS",
+    "category": "portrait",
+    "tags": ["Portrait", "Composition", "Creative"]
+  },
+  {
+    "id": "p5",
+    "title": "Candid Elegance",
+    "description": "An unposed moment frozen in time — natural grace captured with precise timing and soft focus.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1oylrbPVD_YJyUgf6hKufS5sy_VlC6-Ot",
+    "category": "portrait",
+    "tags": ["Candid", "Portrait", "Elegant"]
+  },
+  {
+    "id": "p6",
+    "title": "Warm Tones",
+    "description": "A richly graded portrait bathed in warm amber tones, evoking nostalgia and intimacy.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/13oN8gQALa72BbsUZF6-QX2NAaErWXS1R",
+    "category": "portrait",
+    "tags": ["Portrait", "Color Grading", "Warm"]
+  },
+  {
+    "id": "p7",
+    "title": "Urban Vibes",
+    "description": "A lifestyle portrait set against urban textures, blending street energy with personal style.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/11xNw-QlCPLTWeI2I3L10MA19IOPWWDA7",
+    "category": "lifestyle",
+    "tags": ["Lifestyle", "Urban", "Style"]
+  },
+  {
+    "id": "p8",
+    "title": "Skincare — Before & After",
+    "description": "A clean, minimal before-and-after design for a skincare brand's Instagram presence.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1UW5NF2Lca_Zu1xFU8c-HaLP34mnRdvVv",
+    "category": "graphic-design",
+    "tags": ["Graphic Design", "Skincare", "Social Media"]
+  },
+  {
+    "id": "p9",
+    "title": "Hair Transformation",
+    "description": "A striking black-and-white before-and-after composition highlighting a dramatic hair beauty transformation.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1LXY64nr0WTw8Sil9k3boyODiI_G7QB-e",
+    "category": "graphic-design",
+    "tags": ["Graphic Design", "Beauty", "Minimalist"]
+  },
+  {
+    "id": "p10",
+    "title": "Captured Moment",
+    "description": "A spontaneous lifestyle shot preserving an authentic, joyful moment in natural surroundings.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1hiV9qDkZnXz2P7srKOMD3jg8T-aKfKiT",
+    "category": "lifestyle",
+    "tags": ["Lifestyle", "Candid", "Natural"]
+  },
+  {
+    "id": "p11",
+    "title": "Light & Shadow Play",
+    "description": "A study in contrast — natural light carving dramatic patterns across the subject and environment.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1SdBT1VhNPTmC0_Orr1OfuMPYDGRnHyFt",
+    "category": "lifestyle",
+    "tags": ["Lifestyle", "Light", "Shadow"]
+  },
+  {
+    "id": "p12",
+    "title": "Open Air",
+    "description": "A wide-angle outdoor capture celebrating open spaces, vibrant colors, and natural energy.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1ENI7qlJ0U-zIvKKHSJJVUAPHygrqv8JW",
+    "category": "event",
+    "tags": ["Outdoor", "Event", "Vibrant"]
+  },
+  {
+    "id": "p13",
+    "title": "Aesthetic Mood Board",
+    "description": "A curated mood board collage combining textures, tones, and imagery into a cohesive visual narrative.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1QfzXNQibIxEKlPtcmz6wkh79xhHrLPGo",
+    "category": "graphic-design",
+    "tags": ["Mood Board", "Design", "Aesthetic"]
+  },
+  {
+    "id": "p14",
+    "title": "Editorial Portrait",
+    "description": "A magazine-quality editorial portrait with precise lighting, strong posing, and high production value.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1-cJkl4c1NC2_w-EUSHZHWLkxKWH3-ztL",
+    "category": "portrait",
+    "tags": ["Editorial", "Portrait", "Professional"]
+  },
+  {
+    "id": "p15",
+    "title": "Depth of Field",
+    "description": "A beautifully bokeh-rich shot isolating the subject against a dreamy, blurred background.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1z1wdwOXXyA-C_GRfhD-xELI7JJ1btXEj",
+    "category": "portrait",
+    "tags": ["Portrait", "Bokeh", "DSLR"]
+  },
+  {
+    "id": "p16",
+    "title": "The Stance",
+    "description": "A powerful full-body portrait emphasizing posture, confidence, and environmental context.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1AyKv6GFsOoIoi3Qr2QgVY_C-4dwB8fm7",
+    "category": "portrait",
+    "tags": ["Portrait", "Fashion", "Confident"]
+  },
+  {
+    "id": "p17",
+    "title": "Cinematic Still",
+    "description": "A photograph that feels like a movie frame — rich color grading, dramatic lighting, and narrative tension.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/12XFpDAum6-p9wG4SM2v094jQD8Yg2HA8",
+    "category": "portrait",
+    "tags": ["Cinematic", "Portrait", "Dramatic"]
+  },
+  {
+    "id": "p18",
+    "title": "Into the Light",
+    "description": "A backlit silhouette study playing with rim lighting and atmospheric haze for ethereal effect.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1WquU3mfjLHRthZkI8qBUD4kVBsuSF4yo",
+    "category": "portrait",
+    "tags": ["Silhouette", "Backlit", "Atmospheric"]
+  },
+  {
+    "id": "p19",
+    "title": "Final Frame",
+    "description": "A composed closing shot — clean, intentional, and perfectly balanced in every detail.",
+    "imageUrl": "https://lh3.googleusercontent.com/d/1qWfJFRfLnBhSvUWXADMaMbojMSOkGjpR",
+    "category": "portrait",
+    "tags": ["Portrait", "Composed", "Clean"]
+  }
+]

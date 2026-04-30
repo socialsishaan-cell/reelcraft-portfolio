@@ -37,7 +37,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <div className="navbar-inner">
-          <Link href="/" className="navbar-logo" data-cursor="Home">
+          <Link href="/" className="navbar-logo" data-cursor="Home" style={{ whiteSpace: 'nowrap' }}>
             <span className="gradient-text">REEL</span>CRAFT
           </Link>
 

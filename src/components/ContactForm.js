@@ -10,6 +10,7 @@ export default function ContactForm() {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle');
   const [serverError, setServerError] = useState('');
+  const [focused, setFocused] = useState('');
 
   const validate = () => {
     const newErrors = {};
@@ -110,7 +111,7 @@ export default function ContactForm() {
             exit={{ opacity: 0 }}
           >
             <div className="form-row">
-              <div className="form-group">
+              <div className={`form-group ${focused === 'name' || formData.name ? 'active' : ''}`}>
                 <label htmlFor="name">Name</label>
                 <input
                   id="name"
@@ -119,10 +120,12 @@ export default function ContactForm() {
                   placeholder="Your name"
                   value={formData.name}
                   onChange={handleChange}
+                  onFocus={() => setFocused('name')}
+                  onBlur={() => setFocused('')}
                 />
                 {errors.name && <span className="form-error">{errors.name}</span>}
               </div>
-              <div className="form-group">
+              <div className={`form-group ${focused === 'email' || formData.email ? 'active' : ''}`}>
                 <label htmlFor="email">Email</label>
                 <input
                   id="email"
@@ -131,12 +134,14 @@ export default function ContactForm() {
                   placeholder="you@example.com"
                   value={formData.email}
                   onChange={handleChange}
+                  onFocus={() => setFocused('email')}
+                  onBlur={() => setFocused('')}
                 />
                 {errors.email && <span className="form-error">{errors.email}</span>}
               </div>
             </div>
 
-            <div className="form-group">
+            <div className={`form-group ${focused === 'subject' || formData.subject ? 'active' : ''}`}>
               <label htmlFor="subject">Subject</label>
               <input
                 id="subject"
@@ -145,11 +150,13 @@ export default function ContactForm() {
                 placeholder="Project inquiry, collaboration, etc."
                 value={formData.subject}
                 onChange={handleChange}
+                onFocus={() => setFocused('subject')}
+                onBlur={() => setFocused('')}
               />
               {errors.subject && <span className="form-error">{errors.subject}</span>}
             </div>
 
-            <div className="form-group">
+            <div className={`form-group ${focused === 'message' || formData.message ? 'active' : ''}`}>
               <label htmlFor="message">Message</label>
               <textarea
                 id="message"
@@ -157,8 +164,16 @@ export default function ContactForm() {
                 placeholder="Tell me about your project..."
                 value={formData.message}
                 onChange={handleChange}
+                onFocus={() => setFocused('message')}
+                onBlur={() => setFocused('')}
+                maxLength={500}
               />
-              {errors.message && <span className="form-error">{errors.message}</span>}
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '4px' }}>
+                <span className="form-error">{errors.message || ''}</span>
+                <span className="char-count" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                  {formData.message.length}/500
+                </span>
+              </div>
             </div>
 
             {status === 'error' && (

@@ -9,7 +9,11 @@
     "category": "social-media",
     "client": "MCC Spectrum",
     "date": "2025-03-15",
-    "tags": ["Event Coverage", "After Movie", "Social Media"],
+    "tags": [
+      "Event Coverage",
+      "After Movie",
+      "Social Media"
+    ],
     "featured": true
   },
   {
@@ -22,7 +26,11 @@
     "category": "corporate",
     "client": "Educational Content",
     "date": "2025-02-20",
-    "tags": ["Educational", "Content Creation", "Explainer"],
+    "tags": [
+      "Educational",
+      "Content Creation",
+      "Explainer"
+    ],
     "featured": true
   },
   {
@@ -35,7 +43,11 @@
     "category": "corporate",
     "client": "Aurindam Hospital",
     "date": "2025-01-10",
-    "tags": ["Documentary", "Healthcare", "Profile"],
+    "tags": [
+      "Documentary",
+      "Healthcare",
+      "Profile"
+    ],
     "featured": true
   },
   {
@@ -48,7 +60,11 @@
     "category": "music-video",
     "client": "Fashion Portfolio",
     "date": "2024-12-05",
-    "tags": ["Cinematic", "Portrait", "Color Grading"],
+    "tags": [
+      "Cinematic",
+      "Portrait",
+      "Color Grading"
+    ],
     "featured": true
   },
   {
@@ -61,7 +77,11 @@
     "category": "social-media",
     "client": "MCC Spectrum",
     "date": "2024-11-18",
-    "tags": ["Lifestyle", "Vlog", "Social Media"],
+    "tags": [
+      "Lifestyle",
+      "Vlog",
+      "Social Media"
+    ],
     "featured": true
   },
   {
@@ -74,7 +94,11 @@
     "category": "social-media",
     "client": "MCC Spectrum",
     "date": "2024-10-22",
-    "tags": ["Event Coverage", "Cultural", "After Movie"],
+    "tags": [
+      "Event Coverage",
+      "Cultural",
+      "After Movie"
+    ],
     "featured": true
   },
   {
@@ -87,7 +111,11 @@
     "category": "social-media",
     "client": "Fitness Content",
     "date": "2024-09-14",
-    "tags": ["Fitness", "Gym", "Motivational"],
+    "tags": [
+      "Fitness",
+      "Gym",
+      "Motivational"
+    ],
     "featured": false
   },
   {
@@ -100,7 +128,11 @@
     "category": "music-video",
     "client": "Fashion Portfolio",
     "date": "2024-08-30",
-    "tags": ["Fashion", "VFX", "Double Exposure"],
+    "tags": [
+      "Fashion",
+      "VFX",
+      "Double Exposure"
+    ],
     "featured": false
   },
   {
@@ -113,7 +145,11 @@
     "category": "music-video",
     "client": "Personal Branding",
     "date": "2024-07-12",
-    "tags": ["Portrait", "Neon", "Cinematic"],
+    "tags": [
+      "Portrait",
+      "Neon",
+      "Cinematic"
+    ],
     "featured": false
   },
   {
@@ -126,7 +162,11 @@
     "category": "corporate",
     "client": "Aurindam Hospital",
     "date": "2024-06-25",
-    "tags": ["Testimonial", "Healthcare", "Social Media"],
+    "tags": [
+      "Testimonial",
+      "Healthcare",
+      "Social Media"
+    ],
     "featured": false
   },
   {
@@ -139,7 +179,11 @@
     "category": "corporate",
     "client": "Aurindam Hospital",
     "date": "2024-05-08",
-    "tags": ["Healthcare", "Promo", "Medical Graphics"],
+    "tags": [
+      "Healthcare",
+      "Promo",
+      "Medical Graphics"
+    ],
     "featured": false
   },
   {
@@ -152,7 +196,11 @@
     "category": "social-media",
     "client": "MCC Spectrum",
     "date": "2024-04-15",
-    "tags": ["Event Coverage", "Art", "Creative"],
+    "tags": [
+      "Event Coverage",
+      "Art",
+      "Creative"
+    ],
     "featured": false
   },
   {
@@ -165,7 +213,11 @@
     "category": "commercial",
     "client": "Irani Deli & Co.",
     "date": "2024-03-01",
-    "tags": ["Restaurant", "Promo", "Food"],
+    "tags": [
+      "Restaurant",
+      "Promo",
+      "Food"
+    ],
     "featured": false
   },
   {
@@ -178,7 +230,11 @@
     "category": "music-video",
     "client": "Portrait Portfolio",
     "date": "2024-02-14",
-    "tags": ["Portrait", "Moody", "Urban"],
+    "tags": [
+      "Portrait",
+      "Moody",
+      "Urban"
+    ],
     "featured": false
   },
   {
@@ -191,7 +247,11 @@
     "category": "commercial",
     "client": "Interior Design",
     "date": "2024-01-20",
-    "tags": ["Real Estate", "Interior Design", "Lifestyle"],
+    "tags": [
+      "Real Estate",
+      "Interior Design",
+      "Lifestyle"
+    ],
     "featured": false
   },
   {
@@ -204,7 +264,11 @@
     "category": "corporate",
     "client": "Health & Wellness",
     "date": "2023-12-01",
-    "tags": ["Educational", "Health", "Graphics"],
+    "tags": [
+      "Educational",
+      "Health",
+      "Graphics"
+    ],
     "featured": false
   },
   {
@@ -217,7 +281,11 @@
     "category": "social-media",
     "client": "MCC Spectrum",
     "date": "2023-11-15",
-    "tags": ["Sports", "Event Coverage", "Highlights"],
+    "tags": [
+      "Sports",
+      "Event Coverage",
+      "Highlights"
+    ],
     "featured": false
   },
   {
@@ -230,7 +298,11 @@
     "category": "corporate",
     "client": "Aurindam Hospital",
     "date": "2023-10-20",
-    "tags": ["Healthcare", "Profile", "Documentary"],
+    "tags": [
+      "Healthcare",
+      "Profile",
+      "Documentary"
+    ],
     "featured": false
   },
   {
@@ -243,7 +315,11 @@
     "category": "commercial",
     "client": "Classy Fashion",
     "date": "2023-09-10",
-    "tags": ["Retail", "Promo", "Walkthrough"],
+    "tags": [
+      "Retail",
+      "Promo",
+      "Walkthrough"
+    ],
     "featured": false
   },
   {
@@ -256,7 +332,11 @@
     "category": "commercial",
     "client": "Waffle Forever",
     "date": "2023-08-15",
-    "tags": ["Food", "Behind The Scenes", "Restaurant"],
+    "tags": [
+      "Food",
+      "Behind The Scenes",
+      "Restaurant"
+    ],
     "featured": false
   },
   {
@@ -269,7 +349,232 @@
     "category": "commercial",
     "client": "Waffle Forever",
     "date": "2023-07-20",
-    "tags": ["Food", "Promo", "Social Media"],
+    "tags": [
+      "Food",
+      "Promo",
+      "Social Media"
+    ],
+    "featured": false
+  },
+  {
+    "id": "22",
+    "title": "D&J Studio — Behind the Lens",
+    "description": "A sleek studio showcase capturing the creative energy and professional setup of D&J Studio — from lighting rigs to the final frame.",
+    "longDescription": "This behind-the-scenes studio film takes viewers inside D&J Studio's creative world. The camera glides through meticulously arranged lighting setups, capturing the artistry behind every photo shoot and video production. Smooth tracking shots reveal the interplay between technical equipment and creative vision, while intimate close-ups of gear and workflow moments showcase the studio's commitment to excellence. The warm, controlled studio lighting creates a premium atmosphere throughout.",
+    "videoUrl": "https://drive.google.com/file/d/1VNfDIljWnmmbZogdZ8xmk94e2n1hQReZ/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "commercial",
+    "client": "D&J Studio",
+    "date": "2025-08-10",
+    "tags": [
+      "Studio",
+      "Behind The Scenes",
+      "Branding"
+    ],
+    "featured": false
+  },
+  {
+    "id": "23",
+    "title": "Offscript — Live & Unfiltered",
+    "description": "A high-energy event recap capturing the raw, unscripted moments of the Offscript live experience — where every moment tells a story.",
+    "longDescription": "Offscript is an electrifying event coverage piece that thrives on spontaneity. The edit captures candid interactions, crowd energy, and impromptu performances in rapid-fire montage style. Quick cuts between wide establishing shots and tight close-ups create an immersive experience that puts viewers right in the middle of the action. The dynamic pacing and natural lighting preserve the authentic atmosphere of the live event.",
+    "videoUrl": "https://drive.google.com/file/d/1CDsu6njvU3ZrPXtmN0b8kiA-88QFYfrm/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "event",
+    "client": "Offscript Events",
+    "date": "2025-07-22",
+    "tags": [
+      "Event Coverage",
+      "Live Event",
+      "Recap"
+    ],
+    "featured": false
+  },
+  {
+    "id": "24",
+    "title": "Reliserve — Corporate Vision",
+    "description": "A polished corporate film showcasing Reliserve Solutions' innovative approach to business technology and digital transformation.",
+    "longDescription": "This comprehensive corporate film presents Reliserve Solutions through a cinematic lens, combining executive interviews with dynamic B-roll of their workspace and technology infrastructure. The edit balances professionalism with visual storytelling — using smooth dolly shots through modern office spaces, close-ups of collaborative teamwork, and graphics-enhanced sequences that visualize their digital solutions. The cool, sophisticated color palette reinforces the company's position as a forward-thinking industry leader.",
+    "videoUrl": "https://drive.google.com/file/d/1UlLghu1WpqP2pQjlfcVawRWjGIouoBCY/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "corporate",
+    "client": "Reliserve Solutions",
+    "date": "2025-06-15",
+    "tags": [
+      "Corporate Film",
+      "Technology",
+      "Brand Story"
+    ],
+    "featured": true
+  },
+  {
+    "id": "25",
+    "title": "Daisy Legacy — Brand Story",
+    "description": "An elegant brand film for Daisy Legacy, weaving together heritage craftsmanship with modern design sensibility.",
+    "longDescription": "This brand story film introduces Daisy Legacy through a carefully curated visual journey. From product close-ups that highlight texture and craftsmanship to lifestyle sequences showing the brand in context, the edit creates an aspirational narrative. Soft, golden-hour lighting and a warm color grade evoke the brand's commitment to timeless elegance. The pacing is deliberate and luxurious, allowing each shot to breathe and communicate quality.",
+    "videoUrl": "https://drive.google.com/file/d/12Q9J0RQK6D2PvxNFRe4Cf8NnwYpXnKCD/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "commercial",
+    "client": "Daisy Legacy",
+    "date": "2025-05-20",
+    "tags": [
+      "Brand Film",
+      "Fashion",
+      "Luxury"
+    ],
+    "featured": false
+  },
+  {
+    "id": "26",
+    "title": "Daisy Legacy — The Collection",
+    "description": "A continuation of the Daisy Legacy narrative, spotlighting the latest collection with runway-inspired cinematography.",
+    "longDescription": "Building on the foundation of the original brand story, this sequel film dives deeper into Daisy Legacy's newest collection. The edit features product-focused sequences with dramatic lighting and creative camera angles that transform each piece into a work of art. Seamless transitions between studio shots and styled location footage create a cohesive visual language. The elevated production value and sophisticated post-production push this piece into luxury brand territory.",
+    "videoUrl": "https://drive.google.com/file/d/1Ik4oLEYMK09IQ6OXtEU31tNHqo6gVfiA/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "commercial",
+    "client": "Daisy Legacy",
+    "date": "2025-04-10",
+    "tags": [
+      "Brand Film",
+      "Collection",
+      "Cinematic"
+    ],
+    "featured": false
+  },
+  {
+    "id": "27",
+    "title": "RCC Tailors — Stitch & Style",
+    "description": "A richly textured commercial for RCC Tailors, showcasing the art of bespoke tailoring from fabric selection to the final stitch.",
+    "longDescription": "Stitch & Style follows the meticulous craft of bespoke tailoring at RCC Tailors. The camera lingers on hands measuring, cutting, and sewing fine fabrics, capturing the tactile beauty of the process. Close-up shots of thread meeting needle, steam pressing crisp lapels, and the final fitting create a sensory experience. The warm, intimate lighting and deliberate pacing honor the patience and precision that define true craftsmanship.",
+    "videoUrl": "https://drive.google.com/file/d/17j83yNzkklajKsSXoJY7J2O-ythba2d4/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "commercial",
+    "client": "RCC Tailors",
+    "date": "2025-03-05",
+    "tags": [
+      "Fashion",
+      "Craftsmanship",
+      "Promo"
+    ],
+    "featured": false
+  },
+  {
+    "id": "28",
+    "title": "Celebrity Reel — Star Power",
+    "description": "A high-impact celebrity content reel showcasing electrifying personality and charisma through fast-paced, trend-driven edits.",
+    "longDescription": "Star Power is a dynamic celebrity content piece designed for maximum social media impact. The edit combines striking poses, expressive moments, and high-energy music sync to create a captivating visual package. Rapid cuts, creative transitions, and stylized color grading amplify the subject's screen presence. Every frame is optimized for engagement — from the attention-grabbing opener to the branded outro that leaves a lasting impression.",
+    "videoUrl": "https://drive.google.com/file/d/1PP4_p2p0t74YkuvIUfK450w1nVT_-bkO/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "social-media",
+    "client": "Celebrity Content",
+    "date": "2025-02-14",
+    "tags": [
+      "Celebrity",
+      "Social Media",
+      "Content Creation"
+    ],
+    "featured": true
+  },
+  {
+    "id": "29",
+    "title": "Spectrum Flashmob — The Opening Act",
+    "description": "A thrilling flashmob performance video capturing MCC Spectrum's surprise dance routine that stopped the campus in its tracks.",
+    "longDescription": "This flashmob coverage captures the electrifying moment when MCC Spectrum's performers burst into choreographed movement in the middle of campus. The edit builds suspense from the first casual walker joining the routine to the full ensemble taking over the space. Multiple camera angles — from ground-level crowd reactions to elevated wide shots — create a cinematic retelling of the spontaneous-feeling performance. The energy is contagious, with every cut synced to the driving beat.",
+    "videoUrl": "https://drive.google.com/file/d/1gx5Upystz59XyKcJs6G-zwI0XGyQv-k1/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "event",
+    "client": "MCC Spectrum",
+    "date": "2025-01-18",
+    "tags": [
+      "Flashmob",
+      "Dance",
+      "Campus Event"
+    ],
+    "featured": true
+  },
+  {
+    "id": "30",
+    "title": "Spectrum Flashmob — The Finale",
+    "description": "The grand conclusion of the Spectrum flashmob series — a tighter, cinematic edit that captures the dance crew's crescendo moment.",
+    "longDescription": "The Finale is a polished, condensed version of the Spectrum flashmob, focusing on the climactic final routine. Slow-motion hero shots of individual dancers are intercut with the full group's synchronized movements, creating dramatic tension. The edit uses rhythmic cutting techniques that make every beat drop feel impactful. Crowd reaction shots are woven throughout, showing the genuine awe and excitement generated by the performance.",
+    "videoUrl": "https://drive.google.com/file/d/1Mbh3yfIg0BUk438nxMAcubwCbxcZd7MD/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "event",
+    "client": "MCC Spectrum",
+    "date": "2025-01-12",
+    "tags": [
+      "Flashmob",
+      "Performance",
+      "Highlight"
+    ],
+    "featured": false
+  },
+  {
+    "id": "31",
+    "title": "Admin Department — Behind the Curtain",
+    "description": "A heartfelt tribute to MCC Spectrum's admin team — the unsung organizers who make every event possible.",
+    "longDescription": "Behind the Curtain shines a spotlight on the administrative department of MCC Spectrum, documenting the tireless work that happens offstage. From early morning setup calls and logistics coordination to last-minute problem-solving, the edit captures the human side of event management. Candid interviews and observational footage are intercut with event highlight clips, showing the direct connection between behind-the-scenes effort and on-stage magic. A warm, appreciative tone runs throughout.",
+    "videoUrl": "https://drive.google.com/file/d/1wVYgYzOfiegL4URWy_ObVMHJ3U5XC-Nw/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "event",
+    "client": "MCC Spectrum",
+    "date": "2024-12-20",
+    "tags": [
+      "Documentary",
+      "Behind The Scenes",
+      "Team Profile"
+    ],
+    "featured": false
+  },
+  {
+    "id": "32",
+    "title": "Music Department — The Sound of Spectrum",
+    "description": "A vibrant showcase of MCC Spectrum's music department, from acoustic rehearsals to electrifying stage performances.",
+    "longDescription": "The Sound of Spectrum follows the music department through their creative journey — from intimate practice sessions in small rooms to commanding performances on the main stage. The edit captures the passion of individual musicians in close-up before pulling back to reveal the collective power of the full ensemble. Audio transitions seamlessly blend rehearsal recordings with live performance sound, creating a narrative of growth and dedication. Dynamic lighting from stage shows adds visual drama.",
+    "videoUrl": "https://drive.google.com/file/d/1HEi09aTRA7XY-Xfk3JSoG3VJ2O9iVrn8/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "event",
+    "client": "MCC Spectrum",
+    "date": "2024-11-25",
+    "tags": [
+      "Music",
+      "Performance",
+      "Creative"
+    ],
+    "featured": false
+  },
+  {
+    "id": "33",
+    "title": "Spectrum Day 4 — The Grand Finale",
+    "description": "The culminating highlight reel from Day 4 of MCC Spectrum — an explosive wrap-up of dance-offs, awards, and unforgettable moments.",
+    "longDescription": "Day 4 captures the grand finale of MCC Spectrum's multi-day celebration. The edit opens with the anticipation of the final day and builds through competition finals, surprise guest appearances, and emotional award ceremonies. Every major moment is captured with multi-angle coverage and rhythmic editing that matches the escalating energy. The piece closes with a montage of farewell moments, hugs, and group photos that encapsulate the bittersweet end of an incredible run.",
+    "videoUrl": "https://drive.google.com/file/d/1m5BJiCYa8XUH-C27lzTgVTtqDrpr115o/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "event",
+    "client": "MCC Spectrum",
+    "date": "2024-10-30",
+    "tags": [
+      "Event Coverage",
+      "Highlights",
+      "After Movie"
+    ],
+    "featured": false
+  },
+  {
+    "id": "34",
+    "title": "LODHA — Women's Day Celebration",
+    "description": "An uplifting corporate event film celebrating Women's Day at LODHA Group, honoring the women who shape the company's future.",
+    "longDescription": "This corporate event film documents LODHA Group's Women's Day celebration with grace and sincerity. The edit weaves together keynote speeches, panel discussions, and candid moments of recognition and camaraderie. Soft, empowering music underscores footage of women across different roles sharing their stories and achievements. The corporate branding is tastefully integrated through title cards and lower thirds, while the warm color palette and natural lighting keep the tone personal and genuine.",
+    "videoUrl": "https://drive.google.com/file/d/1MZK4halOculEzHiwP97rxnKH7xTGM44S/preview",
+    "thumbnailUrl": "/thumbnails/placeholder.jpg",
+    "category": "corporate",
+    "client": "LODHA Group",
+    "date": "2025-03-08",
+    "tags": [
+      "Corporate Event",
+      "Women's Day",
+      "Celebration"
+    ],
     "featured": false
   }
 ]

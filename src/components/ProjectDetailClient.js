@@ -1,9 +1,17 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import VideoPlayer from '@/components/VideoPlayer';
+import dynamic from 'next/dynamic';
+import { motion, AnimatePresence } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
+
+const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), {
+  ssr: false,
+  loading: () => (
+    <div className="skeleton-pulse" style={{ width: '100%', aspectRatio: '16/9', borderRadius: 'var(--radius-lg)' }} />
+  )
+});
 
 const categoryLabels = {
   'commercial': 'Commercial',
@@ -11,9 +19,24 @@ const categoryLabels = {
   'short-film': 'Short Film',
   'corporate': 'Corporate',
   'social-media': 'Social Media',
+  'event': 'Event',
 };
 
 export default function ProjectDetailClient({ project, prevProject, nextProject }) {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="project-detail">
       <div className="container">
@@ -89,24 +112,42 @@ export default function ProjectDetailClient({ project, prevProject, nextProject 
         <ScrollReveal>
           <div className="project-nav" style={{ marginBottom: '80px' }}>
             {prevProject ? (
-              <motion.div whileHover={{ x: -4 }} transition={{ duration: 0.2 }}>
+              <motion.div whileHover={{ x: -8 }} transition={{ type: "spring", stiffness: 300 }}>
                 <Link href={`/project/${prevProject.id}`} data-cursor="Previous">
-                  <span className="nav-label">← Previous</span>
-                  <span className="nav-title">{prevProject.title}</span>
+                  <span className="nav-label">← Previous Project</span>
+                  <span className="nav-title gradient-text">{prevProject.title}</span>
                 </Link>
               </motion.div>
             ) : <div />}
             {nextProject ? (
-              <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
+              <motion.div whileHover={{ x: 8 }} transition={{ type: "spring", stiffness: 300 }}>
                 <Link href={`/project/${nextProject.id}`} style={{ textAlign: 'right' }} data-cursor="Next">
-                  <span className="nav-label">Next →</span>
-                  <span className="nav-title">{nextProject.title}</span>
+                  <span className="nav-label">Next Project →</span>
+                  <span className="nav-title gradient-text">{nextProject.title}</span>
                 </Link>
               </motion.div>
             ) : <div />}
           </div>
         </ScrollReveal>
       </div>
+
+      <AnimatePresence>
+        {showTopBtn && (
+          <motion.button
+            className="back-to-top"
+            onClick={scrollToTop}
+            initial={{ opacity: 0, y: 20, scale: 0.8 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.8 }}
+            whileHover={{ y: -5, boxShadow: '0 0 20px rgba(155, 122, 240, 0.4)' }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Back to top"
+            data-cursor="Top"
+          >
+            ↑
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
