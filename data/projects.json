@@ -592,7 +592,7 @@
       "Profile",
       "Interview"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "36",
@@ -609,7 +609,7 @@
       "Profile",
       "Cinematic"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "37",
@@ -626,7 +626,7 @@
       "Walkthrough",
       "Facility Tour"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "38",
@@ -643,7 +643,7 @@
       "Interview",
       "Profile"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "39",
@@ -660,7 +660,7 @@
       "Profile",
       "Medical"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "40",
@@ -677,7 +677,7 @@
       "Healthcare",
       "Brand Film"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "41",
@@ -694,6 +694,6 @@
       "Walkthrough",
       "Promo"
     ],
-    "featured": false
+    "featured": true
   }
 ]
