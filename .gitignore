@@ -34,5 +34,5 @@ yarn-error.log*
 # env files
 .env*.local
 
-# video files (too large for GitHub)
-public/videos/*.mp4
+# video/media files (too large for GitHub)
+public/videos/
