@@ -6,7 +6,7 @@ async function getFeaturedProjects() {
   const filePath = path.join(process.cwd(), 'data', 'projects.json');
   const data = fs.readFileSync(filePath, 'utf8');
   const projects = JSON.parse(data);
-  return projects.filter(p => p.featured).slice(0, 16);
+  return projects.filter(p => p.featured);
 }
 
 export default async function HomePage() {

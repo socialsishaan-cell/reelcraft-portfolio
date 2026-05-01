@@ -14,7 +14,7 @@
       "After Movie",
       "Social Media"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "2",
@@ -31,7 +31,7 @@
       "Content Creation",
       "Explainer"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "3",
@@ -48,7 +48,7 @@
       "Healthcare",
       "Profile"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "4",
@@ -65,7 +65,7 @@
       "Portrait",
       "Color Grading"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "5",
@@ -82,7 +82,7 @@
       "Vlog",
       "Social Media"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "6",
@@ -99,7 +99,7 @@
       "Cultural",
       "After Movie"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "7",
@@ -269,7 +269,7 @@
       "Health",
       "Graphics"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "17",
@@ -337,7 +337,7 @@
       "Behind The Scenes",
       "Restaurant"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "21",
@@ -473,7 +473,7 @@
       "Social Media",
       "Content Creation"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "29",
@@ -490,7 +490,7 @@
       "Dance",
       "Campus Event"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "30",
@@ -575,7 +575,7 @@
       "Women's Day",
       "Celebration"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "35",
@@ -592,7 +592,7 @@
       "Profile",
       "Interview"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "36",
@@ -609,7 +609,7 @@
       "Profile",
       "Cinematic"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "37",
@@ -626,7 +626,7 @@
       "Walkthrough",
       "Facility Tour"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "38",
@@ -643,7 +643,7 @@
       "Interview",
       "Profile"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "39",
@@ -660,7 +660,7 @@
       "Profile",
       "Medical"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "40",
@@ -677,7 +677,7 @@
       "Healthcare",
       "Brand Film"
     ],
-    "featured": true
+    "featured": false
   },
   {
     "id": "41",
