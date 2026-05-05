@@ -9,6 +9,7 @@ import MagneticButton from '@/components/MagneticButton';
 import ClientMarquee from '@/components/ClientMarquee';
 import ServicesBento from '@/components/ServicesBento';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
+import PackagesSection from '@/components/PackagesSection';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const wordAnimation = {
@@ -198,6 +199,8 @@ export default function HomeClient({ featured }) {
       <ServicesBento />
       
       <TestimonialCarousel />
+
+      <PackagesSection />
 
       {/* CTA */}
       <section className="section" style={{ background: 'var(--bg-secondary)', textAlign: 'center' }}>

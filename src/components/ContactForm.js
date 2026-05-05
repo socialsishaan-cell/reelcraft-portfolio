@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { WHATSAPP_NUMBER } from '@/lib/constants';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ export default function ContactForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!validate()) return;
 
@@ -32,24 +33,26 @@ export default function ContactForm() {
     setServerError('');
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      // Format the message with all form fields
+      const messageBody = [
+        `🎬 *New ReelCraft Inquiry*`,
+        ``,
+        `*Name:* ${formData.name}`,
+        `*Email:* ${formData.email}`,
+        `*Subject:* ${formData.subject}`,
+        ``,
+        `*Message:*`,
+        formData.message,
+      ].join('\n');
 
-      const data = await res.json();
+      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageBody)}`;
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
-      if (data.success) {
-        setStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setStatus('error');
-        setServerError(data.error || 'Something went wrong');
-      }
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
     } catch {
       setStatus('error');
-      setServerError('Network error. Please try again.');
+      setServerError('Something went wrong. Please try again.');
     }
   };
 

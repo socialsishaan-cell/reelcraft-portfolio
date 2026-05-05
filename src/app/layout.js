@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ClientLayout from '@/components/ClientLayout';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
@@ -44,9 +45,11 @@ export default function RootLayout({ children }) {
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <WhatsAppButton />
         </ClientLayout>
         <Analytics />
       </body>
     </html>
   );
 }
+

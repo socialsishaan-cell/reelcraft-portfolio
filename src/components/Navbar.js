@@ -18,6 +18,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false);
   }, [pathname]);
 
@@ -25,6 +26,7 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/portfolio', label: 'Portfolio' },
     { href: '/about', label: 'About' },
+    { href: '/#packages', label: 'Packages' },
     { href: '/contact', label: 'Contact' },
   ];
 
