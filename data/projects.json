@@ -14,7 +14,7 @@
       "After Movie",
       "Social Media"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "2",
@@ -31,7 +31,7 @@
       "Content Creation",
       "Explainer"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "3",
@@ -65,7 +65,7 @@
       "Portrait",
       "Color Grading"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "5",
@@ -99,7 +99,7 @@
       "Cultural",
       "After Movie"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "7",
@@ -116,7 +116,7 @@
       "Gym",
       "Motivational"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "8",
@@ -422,7 +422,7 @@
       "Fashion",
       "Luxury"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "26",
@@ -439,7 +439,7 @@
       "Collection",
       "Cinematic"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "27",
@@ -456,7 +456,7 @@
       "Craftsmanship",
       "Promo"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "28",
@@ -473,7 +473,7 @@
       "Social Media",
       "Content Creation"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "29",
@@ -643,7 +643,7 @@
       "Interview",
       "Profile"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "39",
@@ -660,7 +660,7 @@
       "Profile",
       "Medical"
     ],
-    "featured": false
+    "featured": true
   },
   {
     "id": "40",
