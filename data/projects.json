@@ -695,5 +695,243 @@
       "Promo"
     ],
     "featured": true
+  },
+  {
+    "id": "42",
+    "title": "Happy Birthday Gargi — Neon & Balloons Celebration Vlog",
+    "description": "A warm and aesthetic event vlog capturing the beautiful birthday celebration for Gargi, featuring custom neon lighting, elegant balloon decorations, and heartwarming family moments.",
+    "longDescription": "A warm and aesthetic event vlog capturing the beautiful birthday celebration for Gargi, featuring custom neon lighting, elegant balloon decorations, and heartwarming family moments.",
+    "videoUrl": "https://drive.google.com/file/d/1D-ap5rX2Rf7LLG8wG4KRdAmpCpOF4VBO/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-1.jpg",
+    "category": "social-media",
+    "client": "Personal Client",
+    "date": "2025-08-12",
+    "tags": [
+      "Event Coverage",
+      "Birthday Vlog",
+      "Social Media"
+    ],
+    "featured": false
+  },
+  {
+    "id": "43",
+    "title": "Cinematic Transitions & Low-Light Portrait Series",
+    "description": "A moody, atmospheric montage exploring experimental low-light videography, slow-motion portraiture, and smooth visual transitions that create a sense of mystery.",
+    "longDescription": "A moody, atmospheric montage exploring experimental low-light videography, slow-motion portraiture, and smooth visual transitions that create a sense of mystery.",
+    "videoUrl": "https://drive.google.com/file/d/1HplQBlKjHKuC9k7lggWZNAAephmqA3jo/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-2.jpg",
+    "category": "music-video",
+    "client": "Creative Portfolio",
+    "date": "2025-08-15",
+    "tags": [
+      "Cinematic",
+      "Moody",
+      "Slow Motion"
+    ],
+    "featured": false
+  },
+  {
+    "id": "44",
+    "title": "Wings of Gold — Black & White Cinematic Portrait",
+    "description": "An artistic, high-contrast black-and-white fashion reel featuring a portrait sequence with a prominent wing sculpture, highlighted by dynamic zoom blur effects and styling.",
+    "longDescription": "An artistic, high-contrast black-and-white fashion reel featuring a portrait sequence with a prominent wing sculpture, highlighted by dynamic zoom blur effects and styling.",
+    "videoUrl": "https://drive.google.com/file/d/17GWYld5Sb6wvWMc5EdIuOYkT9JdpuuzQ/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-3.jpg",
+    "category": "music-video",
+    "client": "Fashion Portfolio",
+    "date": "2025-08-18",
+    "tags": [
+      "Fashion",
+      "Portrait",
+      "Black & White"
+    ],
+    "featured": false
+  },
+  {
+    "id": "45",
+    "title": "Cosmetic Surgery: Change or Choice? — Dr. Hemant Patil",
+    "description": "An educational healthcare reel featuring Dr. Hemant Patil, Plastic & Reconstructive Surgeon at Aurindam Hospital, discussing the core philosophy, options, and patient choices in cosmetic surgery.",
+    "longDescription": "An educational healthcare reel featuring Dr. Hemant Patil, Plastic & Reconstructive Surgeon at Aurindam Hospital, discussing the core philosophy, options, and patient choices in cosmetic surgery.",
+    "videoUrl": "https://drive.google.com/file/d/1o-1n_D2kyvG-5ksvAmt9hN2GnNYzOZrj/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-4.jpg",
+    "category": "corporate",
+    "client": "Aurindam Hospital",
+    "date": "2025-08-20",
+    "tags": [
+      "Healthcare",
+      "Profile",
+      "Explainer"
+    ],
+    "featured": false
+  },
+  {
+    "id": "46",
+    "title": "Golden Lights — Birthday Celebration After-Movie",
+    "description": "A warm, high-energy event recap featuring glowing neon decorations, warm curtain backdrops, and a festive atmosphere of a premium birthday party.",
+    "longDescription": "A warm, high-energy event recap featuring glowing neon decorations, warm curtain backdrops, and a festive atmosphere of a premium birthday party.",
+    "videoUrl": "https://drive.google.com/file/d/1ZAZJRKU7WIbhd6hSSkn4879XcQ6a0TQ6/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-5.jpg",
+    "category": "event",
+    "client": "Personal Client",
+    "date": "2025-08-22",
+    "tags": [
+      "Event Coverage",
+      "After Movie",
+      "Celebration"
+    ],
+    "featured": false
+  },
+  {
+    "id": "47",
+    "title": "Life Insurance: Financial Security Explained (Marathi)",
+    "description": "A clear, accessible Marathi informational explainer video breaking down the importance of life insurance, coverage types, and policy selection for families.",
+    "longDescription": "A clear, accessible Marathi informational explainer video breaking down the importance of life insurance, coverage types, and policy selection for families.",
+    "videoUrl": "https://drive.google.com/file/d/1Zh9CT8LBcpFPVAl7AnidB0cgQZsdRsnB/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-6.jpg",
+    "category": "corporate",
+    "client": "Financial Services",
+    "date": "2025-08-25",
+    "tags": [
+      "Financial",
+      "Explainer",
+      "Marathi"
+    ],
+    "featured": false
+  },
+  {
+    "id": "48",
+    "title": "Health Insurance: Policy or Power? — Financial Explainer",
+    "description": "An informative guide discussing health insurance policies, highlighting how to leverage policy features, avoid common pitfalls, and choose the right medical coverage.",
+    "longDescription": "An informative guide discussing health insurance policies, highlighting how to leverage policy features, avoid common pitfalls, and choose the right medical coverage.",
+    "videoUrl": "https://drive.google.com/file/d/1n_wBTie8vtgfwCq_EAmkM6E_dZhD9c-f/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-7.jpg",
+    "category": "corporate",
+    "client": "Financial Services",
+    "date": "2025-08-28",
+    "tags": [
+      "Financial",
+      "Explainer",
+      "Healthcare"
+    ],
+    "featured": false
+  },
+  {
+    "id": "49",
+    "title": "The Digital Workspace — Cinematic Productivity B-Roll",
+    "description": "A high-quality, close-up study of hands typing on a keyboard, featuring a shallow depth of field, natural office lighting, and crisp sound design suitable for tech promotions.",
+    "longDescription": "A high-quality, close-up study of hands typing on a keyboard, featuring a shallow depth of field, natural office lighting, and crisp sound design suitable for tech promotions.",
+    "videoUrl": "https://drive.google.com/file/d/1SaSGWsXKfZ7k6yileAtRdgTRC_aHUnfL/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-8.jpg",
+    "category": "commercial",
+    "client": "Workspace B-Roll",
+    "date": "2025-08-30",
+    "tags": [
+      "Commercial",
+      "Productivity",
+      "B-Roll"
+    ],
+    "featured": false
+  },
+  {
+    "id": "50",
+    "title": "Advanced Diagnostics — Aurindam Hospital",
+    "description": "A professional healthcare promo highlighting Aurindam Hospital's state-of-the-art diagnostic facilities, modern reception, and advanced, non-invasive imaging systems.",
+    "longDescription": "A professional healthcare promo highlighting Aurindam Hospital's state-of-the-art diagnostic facilities, modern reception, and advanced, non-invasive imaging systems.",
+    "videoUrl": "https://drive.google.com/file/d/1zcJf2qd3JSd0vsuVCM7lbikTcqmS--vT/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-9.jpg",
+    "category": "corporate",
+    "client": "Aurindam Hospital",
+    "date": "2025-09-02",
+    "tags": [
+      "Healthcare",
+      "Diagnostics",
+      "Facility Tour"
+    ],
+    "featured": false
+  },
+  {
+    "id": "51",
+    "title": "Noir Aesthetics — Experimental Cinematic Montage",
+    "description": "An experimental visual showcase featuring moody atmospheric lighting, high-contrast silhouettes, and minimalist production design.",
+    "longDescription": "An experimental visual showcase featuring moody atmospheric lighting, high-contrast silhouettes, and minimalist production design.",
+    "videoUrl": "https://drive.google.com/file/d/1jNVOv2bPff-z1bL_tvon_YNxo0RIC4a6/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-10.jpg",
+    "category": "music-video",
+    "client": "Creative Portfolio",
+    "date": "2025-09-05",
+    "tags": [
+      "Cinematic",
+      "Creative",
+      "Noir"
+    ],
+    "featured": false
+  },
+  {
+    "id": "52",
+    "title": "Creative Coding & Writing — Technical Vlog Showcase",
+    "description": "A vertical-format lifestyle B-roll showcasing technical workspace aesthetics, focusing on keyboard typing sequences and productive developer vibes.",
+    "longDescription": "A vertical-format lifestyle B-roll showcasing technical workspace aesthetics, focusing on keyboard typing sequences and productive developer vibes.",
+    "videoUrl": "https://drive.google.com/file/d/1By3qFPdSUn9GFyXfQoiHI4NMkp-GQKgN/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-11.jpg",
+    "category": "commercial",
+    "client": "Developer Vlog",
+    "date": "2025-09-08",
+    "tags": [
+      "Vlog",
+      "Tech",
+      "B-Roll"
+    ],
+    "featured": false
+  },
+  {
+    "id": "53",
+    "title": "Gourmet Catering & Dining Experience Showcase",
+    "description": "A mouth-watering commercial reel highlighting exquisite culinary displays, professional catering setups, and fine food presentations for premium events.",
+    "longDescription": "A mouth-watering commercial reel highlighting exquisite culinary displays, professional catering setups, and fine food presentations for premium events.",
+    "videoUrl": "https://drive.google.com/file/d/1qWDzXLpNlQ3PXFyWlXjq1-FrpYPUh2c1/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-12.jpg",
+    "category": "commercial",
+    "client": "Catering Service",
+    "date": "2025-09-10",
+    "tags": [
+      "Food",
+      "Commercial",
+      "Event"
+    ],
+    "featured": false
+  },
+  {
+    "id": "54",
+    "title": "Understanding Plastic Surgery (Marathi) — Dr. Hemant Patil",
+    "description": "An interview reel featuring Dr. Hemant Patil, Director of Aurindam Hospital, addressing misconceptions, procedures, and safety protocols in cosmetic and plastic surgery.",
+    "longDescription": "An interview reel featuring Dr. Hemant Patil, Director of Aurindam Hospital, addressing misconceptions, procedures, and safety protocols in cosmetic and plastic surgery.",
+    "videoUrl": "https://drive.google.com/file/d/1ueVIgPRDSg4Xe4LSyc4eIg-9R1B8xV0p/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-13.jpg",
+    "category": "corporate",
+    "client": "Aurindam Hospital",
+    "date": "2025-09-12",
+    "tags": [
+      "Healthcare",
+      "Interview",
+      "Marathi"
+    ],
+    "featured": false
+  },
+  {
+    "id": "55",
+    "title": "Spectacular Nights — College Festival Crowd Highlights",
+    "description": "An energetic event highlight capturing a massive outdoor student crowd at MCC Spectrum, featuring multi-colored stage lights and vibrant festival energy.",
+    "longDescription": "An energetic event highlight capturing a massive outdoor student crowd at MCC Spectrum, featuring multi-colored stage lights and vibrant festival energy.",
+    "videoUrl": "https://drive.google.com/file/d/1-hltPvlpHEJ2-qrSNSxzIWPffHb_rmS1/preview",
+    "thumbnailUrl": "/thumbnails/new-thumb-14.jpg",
+    "category": "event",
+    "client": "MCC Spectrum",
+    "date": "2025-09-15",
+    "tags": [
+      "Event Coverage",
+      "College Festival",
+      "Highlights"
+    ],
+    "featured": false
   }
 ]
