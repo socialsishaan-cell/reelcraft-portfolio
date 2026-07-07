@@ -10,29 +10,39 @@ const clients = [
   "Creative Studios",
   "Visionary Brands",
   "Global Media",
+  "Waffle Forever",
+  "Reliserve Solutions",
+  "Daisy Legacy",
+  "RCC Tailors",
+  "LODHA Group",
+  "Irani Deli & Co.",
+  "Classy Fashion",
 ];
 
 export default function ClientMarquee() {
+  // Duplicate for seamless infinite loop
+  const doubled = [...clients, ...clients];
+
   return (
     <div className="client-marquee-container">
-      <div className="marquee-fade-left"></div>
-      <div className="marquee-fade-right"></div>
-      
+      <p className="marquee-credits-label">— in collaboration with —</p>
+
+      <div className="marquee-fade-left" aria-hidden="true" />
+      <div className="marquee-fade-right" aria-hidden="true" />
+
       <motion.div
         className="client-marquee-track"
-        animate={{
-          x: ['0%', '-50%'],
-        }}
+        animate={{ x: ['0%', '-50%'] }}
         transition={{
-          duration: 30,
-          ease: "linear",
+          duration: 40,
+          ease: 'linear',
           repeat: Infinity,
         }}
       >
-        {/* Render the array twice to ensure seamless looping */}
-        {[...clients, ...clients].map((client, index) => (
+        {doubled.map((client, index) => (
           <div key={`${client}-${index}`} className="marquee-item">
             {client}
+            <span className="marquee-sep">·</span>
           </div>
         ))}
       </motion.div>

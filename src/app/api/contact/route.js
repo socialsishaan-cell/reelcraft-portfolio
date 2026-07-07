@@ -37,32 +37,32 @@ export async function POST(request) {
       to: 'socialsishaan@gmail.com',
       subject: `[ReelCraft] ${subject} — from ${name}`,
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0A0A0F; color: #F7F7FF; padding: 32px; border-radius: 16px;">
-          <div style="border-bottom: 2px solid #9b7af0; padding-bottom: 16px; margin-bottom: 24px;">
-            <h1 style="margin: 0; font-size: 24px; color: #9b7af0;">🎬 New ReelCraft Inquiry</h1>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0A1220; color: #EEF2F7; padding: 32px; border-radius: 16px;">
+          <div style="border-bottom: 2px solid #4FD8C4; padding-bottom: 16px; margin-bottom: 24px;">
+            <h1 style="margin: 0; font-size: 24px; color: #4FD8C4;">🌧️ New ReelCraft Inquiry</h1>
           </div>
           
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
-              <td style="padding: 12px 0; color: #9898B8; width: 100px; vertical-align: top;">Name</td>
+              <td style="padding: 12px 0; color: #9FADC4; width: 100px; vertical-align: top;">Name</td>
               <td style="padding: 12px 0; font-weight: 600;">${name}</td>
             </tr>
             <tr>
-              <td style="padding: 12px 0; color: #9898B8; vertical-align: top;">Email</td>
-              <td style="padding: 12px 0;"><a href="mailto:${email}" style="color: #6ee7b7;">${email}</a></td>
+              <td style="padding: 12px 0; color: #9FADC4; vertical-align: top;">Email</td>
+              <td style="padding: 12px 0;"><a href="mailto:${email}" style="color: #F2A93B;">${email}</a></td>
             </tr>
             <tr>
-              <td style="padding: 12px 0; color: #9898B8; vertical-align: top;">Subject</td>
+              <td style="padding: 12px 0; color: #9FADC4; vertical-align: top;">Subject</td>
               <td style="padding: 12px 0; font-weight: 600;">${subject}</td>
             </tr>
           </table>
-
-          <div style="margin-top: 24px; padding: 20px; background: rgba(155, 122, 240, 0.1); border: 1px solid rgba(155, 122, 240, 0.2); border-radius: 12px;">
-            <p style="margin: 0 0 8px; color: #9898B8; font-size: 14px;">Message</p>
+ 
+          <div style="margin-top: 24px; padding: 20px; background: rgba(79, 216, 196, 0.08); border: 1px solid rgba(79, 216, 196, 0.25); border-radius: 12px;">
+            <p style="margin: 0 0 8px; color: #9FADC4; font-size: 14px;">Message</p>
             <p style="margin: 0; line-height: 1.6; white-space: pre-wrap;">${message}</p>
           </div>
-
-          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #161625; font-size: 12px; color: #5E5E7F;">
+ 
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #14213A; font-size: 12px; color: #6E7C97;">
             Sent from your ReelCraft portfolio contact form
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Inter, Outfit } from 'next/font/google';
+import { Inter, Outfit, Bricolage_Grotesque } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -18,13 +18,20 @@ const outfit = Outfit({
   display: 'swap',
 });
 
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  variable: '--font-bricolage',
+  weight: ['500', '600', '700'],
+  display: 'swap',
+});
+
 export const metadata = {
-  title: 'ReelCraft | Video Editor Portfolio',
-  description: 'Premium video editing portfolio showcasing commercial spots, music videos, short films, and creative content. Crafting compelling visual stories.',
-  keywords: 'video editor, portfolio, video editing, color grading, motion graphics, visual storyteller',
+  title: 'REELCRAFT — Video Editor Portfolio, Mumbai',
+  description: 'Premium video editing, colour grading, motion graphics, and sound design by Ishaan — crafting compelling visual stories, frame by frame.',
+  keywords: 'video editor, Mumbai, portfolio, video editing, colour grading, motion graphics, sound design, Ishaan',
   openGraph: {
-    title: 'ReelCraft | Video Editor Portfolio',
-    description: 'Premium video editing portfolio by Ishaan. Crafting compelling visual stories frame by frame.',
+    title: 'REELCRAFT — Video Editor Portfolio',
+    description: 'Premium video editing, colour grading, motion graphics, and sound design by Ishaan — crafting compelling visual stories, frame by frame.',
     url: 'https://reelcraft-portfolio.vercel.app',
     siteName: 'ReelCraft',
     locale: 'en_US',
@@ -32,14 +39,14 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ReelCraft | Video Editor',
-    description: 'Premium video editing portfolio. Crafting compelling visual stories frame by frame.',
+    title: 'REELCRAFT — Video Editor Portfolio, Mumbai',
+    description: 'Premium video editing, colour grading, motion graphics, and sound design by Ishaan.',
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${inter.variable} ${outfit.variable} ${bricolage.variable}`}>
       <body>
         <ClientLayout>
           <Navbar />

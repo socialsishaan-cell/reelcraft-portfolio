@@ -3,6 +3,7 @@
 import { motion, useScroll, useSpring } from 'framer-motion';
 import CustomCursor from '@/components/CustomCursor';
 import FilmGrainOverlay from '@/components/FilmGrainOverlay';
+import { MonsoonProvider } from '@/components/MonsoonContext';
 
 export default function ClientLayout({ children }) {
   const { scrollYProgress } = useScroll();
@@ -13,7 +14,7 @@ export default function ClientLayout({ children }) {
   });
 
   return (
-    <>
+    <MonsoonProvider>
       <CustomCursor />
       <FilmGrainOverlay />
       <motion.div
@@ -21,6 +22,6 @@ export default function ClientLayout({ children }) {
         style={{ scaleX }}
       />
       {children}
-    </>
+    </MonsoonProvider>
   );
 }
