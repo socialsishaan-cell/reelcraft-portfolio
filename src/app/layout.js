@@ -1,4 +1,4 @@
-import { Inter, Outfit, Bricolage_Grotesque } from 'next/font/google';
+import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -15,13 +15,6 @@ const inter = Inter({
 const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
-  display: 'swap',
-});
-
-const bricolage = Bricolage_Grotesque({
-  subsets: ['latin'],
-  variable: '--font-bricolage',
-  weight: ['500', '600', '700'],
   display: 'swap',
 });
 
@@ -46,7 +39,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable} ${bricolage.variable}`}>
+    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body>
         <ClientLayout>
           <Navbar />
