@@ -15,9 +15,10 @@ export default function VideoCard({ project, index = 0 }) {
     'corporate': 'Corporate',
     'social-media': 'Social Media',
     'event': 'Event',
+    'photography': 'Photography',
   };
 
-  const isDriveUrl = project.videoUrl && project.videoUrl.includes('drive.google.com');
+  const isDriveUrl = Boolean(project.videoUrl && project.videoUrl.includes('drive.google.com'));
 
   const handleMouseMove = (e) => {
     if (!cardRef.current) return;
@@ -26,8 +27,8 @@ export default function VideoCard({ project, index = 0 }) {
     const y = e.clientY - rect.top;
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    const rotateX = ((y - centerY) / centerY) * -6;
-    const rotateY = ((x - centerX) / centerX) * 6;
+    const rotateX = ((y - centerY) / centerY) * -5;
+    const rotateY = ((x - centerX) / centerX) * 5;
     setTilt({ rotateX, rotateY });
   };
 
@@ -51,6 +52,7 @@ export default function VideoCard({ project, index = 0 }) {
 
   // Convert Drive preview URL to embeddable thumbnail
   const getDriveThumbnail = (url) => {
+    if (!url) return null;
     const match = url.match(/\/file\/d\/([^/]+)/);
     if (match) {
       return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w640`;
@@ -58,13 +60,24 @@ export default function VideoCard({ project, index = 0 }) {
     return null;
   };
 
+  const thumbnailSrc =
+    project.thumbnailUrl && project.thumbnailUrl.startsWith('/thumbnails/new-thumb-')
+      ? project.thumbnailUrl
+      : isDriveUrl
+      ? getDriveThumbnail(project.videoUrl)
+      : project.thumbnailUrl || '/thumbnails/new-thumb-1.jpg';
+
+  const formattedDate = project.date
+    ? new Date(project.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+    : '';
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, filter: 'blur(6px)' }}
-      animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{
-        duration: 0.6,
-        delay: index * 0.08,
+        duration: 0.5,
+        delay: Math.min(index * 0.06, 0.4),
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
     >
@@ -81,15 +94,15 @@ export default function VideoCard({ project, index = 0 }) {
           }}
           transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           style={{ transformStyle: 'preserve-3d', perspective: '1000px' }}
-          data-cursor="View"
         >
           <div className="card-shine" />
           <div className="video-card-thumbnail">
-            {isDriveUrl ? (
+            {isDriveUrl || thumbnailSrc ? (
               <>
                 <div className="skeleton-pulse" style={{ position: 'absolute', inset: 0, zIndex: -1 }} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={getDriveThumbnail(project.videoUrl)}
+                  src={thumbnailSrc}
                   alt={project.title}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   referrerPolicy="no-referrer"
@@ -105,25 +118,28 @@ export default function VideoCard({ project, index = 0 }) {
                 preload="metadata"
               />
             )}
+
             <div className="video-card-overlay">
               <motion.div
                 className="play-icon"
-                whileHover={{ scale: 1.1, boxShadow: '0 0 20px rgba(155, 122, 240, 0.6)' }}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               />
             </div>
+
             <div className="video-card-category">
               <span className="badge badge-accent">
                 {categoryLabels[project.category] || project.category}
               </span>
             </div>
           </div>
+
           <div className="video-card-body">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="video-card-meta">
               <span>{project.client}</span>
-              <span>{new Date(project.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
+              {formattedDate && <span>{formattedDate}</span>}
             </div>
           </div>
         </motion.div>

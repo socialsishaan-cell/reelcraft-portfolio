@@ -1,34 +1,71 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import MagneticButton from '@/components/MagneticButton';
+import HeroSection from '@/components/HeroSection';
 import ClientMarquee from '@/components/ClientMarquee';
+import VideoCard from '@/components/VideoCard';
 import ServicesBento from '@/components/ServicesBento';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
 import PackagesSection from '@/components/PackagesSection';
 import ScrollReveal from '@/components/ScrollReveal';
-import MonsoonHero from '@/components/MonsoonHero';
-import WorkContactSheet from '@/components/WorkContactSheet';
+import MagneticButton from '@/components/MagneticButton';
 
-export default function HomeClient({ featured }) {
+export default function HomeClient({ featured = [] }) {
+  // Show up to 6 curated featured projects on homepage
+  const displayedProjects = featured.slice(0, 6);
+
   return (
     <>
-      {/* ── HERO — Monsoon Cut ── */}
-      <MonsoonHero />
+      {/* ── HERO ── */}
+      <HeroSection />
 
-      {/* ── CLIENT MARQUEE — film credits style ── */}
+      {/* ── CLIENT MARQUEE ── */}
       <ClientMarquee />
 
-      {/* ── FEATURED WORK — contact sheet grid ── */}
-      <WorkContactSheet featured={featured} />
+      {/* ── FEATURED PROJECTS ── */}
+      <section className="featured-section" id="work">
+        <div className="container">
+          <ScrollReveal>
+            <div className="section-header">
+              <span className="badge badge-accent">Featured Work</span>
+              <h2 style={{ marginTop: '16px' }}>
+                Selected <span className="gradient-text">Projects</span>
+              </h2>
+              <p>
+                A curated selection of recent work across commercials, music videos,
+                brand stories, and social media reels.
+              </p>
+            </div>
+          </ScrollReveal>
 
-      {/* ── CAPABILITIES — proper SVG icons ── */}
+          <div className="projects-grid">
+            {displayedProjects.map((project, i) => (
+              <VideoCard key={project.id} project={project} index={i} />
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.2}>
+            <div style={{ textAlign: 'center', marginTop: '48px' }}>
+              <MagneticButton>
+                <Link href="/portfolio" className="btn btn-outline btn-lg">
+                  View All Projects ({featured.length > 0 ? `${featured.length}+` : 'Explore'}) →
+                </Link>
+              </MagneticButton>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ── CAPABILITIES ── */}
       <ServicesBento />
 
-      {/* ── PACKAGES ── */}
+      {/* ── TESTIMONIALS ── */}
+      <TestimonialCarousel />
+
+      {/* ── PACKAGES & PRICING ── */}
       <PackagesSection />
 
-      {/* ── CTA ── */}
+      {/* ── CALL TO ACTION ── */}
       <section className="section" style={{ background: 'var(--bg-secondary)', textAlign: 'center' }}>
         <div className="container">
           <ScrollReveal>
@@ -44,14 +81,21 @@ export default function HomeClient({ featured }) {
               }}>
                 Have a project in mind?
               </h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '500px', margin: '0 auto 32px' }}>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '520px', margin: '0 auto 32px' }}>
                 I&apos;m always open to discussing new projects, creative ideas, and opportunities to bring your vision to life.
               </p>
-              <MagneticButton>
-                <Link href="/contact" className="btn btn-primary btn-lg" data-cursor="Let's Talk">
-                  Start a Conversation →
-                </Link>
-              </MagneticButton>
+              <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <MagneticButton>
+                  <Link href="/contact" className="btn btn-primary btn-lg">
+                    Start a Conversation →
+                  </Link>
+                </MagneticButton>
+                <MagneticButton>
+                  <Link href="/portfolio" className="btn btn-outline btn-lg">
+                    Browse Portfolio
+                  </Link>
+                </MagneticButton>
+              </div>
             </div>
           </ScrollReveal>
         </div>

@@ -89,6 +89,7 @@ export default function PhotoGallery() {
             data-cursor="View"
           >
             <div className="photo-card-image">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={photo.imageUrl}
                 alt={photo.title}
@@ -135,6 +136,7 @@ export default function PhotoGallery() {
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={current.imageUrl}
                 alt={current.title}

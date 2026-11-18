@@ -5,14 +5,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import MagneticButton from '@/components/MagneticButton';
-import { useMonsoon } from '@/components/MonsoonContext';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-  const { timecode } = useMonsoon();
-  const isHome = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -42,17 +39,9 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <div className="navbar-inner">
-          <Link href="/" className="navbar-logo" data-cursor="Home" style={{ whiteSpace: 'nowrap' }}>
+          <Link href="/" className="navbar-logo" style={{ whiteSpace: 'nowrap' }}>
             <span className="gradient-text">REEL</span>CRAFT
           </Link>
-
-          {/* Live timecode — homepage only, hidden on narrow viewports via CSS */}
-          {isHome && (
-            <div className="navbar-timecode" aria-hidden="true">
-              <span className="navbar-rec-dot" />
-              <span className="navbar-tc-value">{timecode}</span>
-            </div>
-          )}
 
           <ul className="navbar-links">
             {links.map(link => (
@@ -61,7 +50,6 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     className={`nav-link ${pathname === link.href ? 'active' : ''}`}
-                    data-cursor=""
                   >
                     {link.label}
                     {pathname === link.href && (
@@ -78,7 +66,7 @@ export default function Navbar() {
           </ul>
 
           <MagneticButton strength={0.2}>
-            <Link href="/contact" className="btn btn-primary navbar-cta navbar-cta-desktop hire-me-btn" data-cursor="Let's Talk">
+            <Link href="/contact" className="btn btn-primary navbar-cta navbar-cta-desktop hire-me-btn">
               Hire Me
             </Link>
           </MagneticButton>
