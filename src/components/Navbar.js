@@ -40,7 +40,7 @@ export default function Navbar() {
       >
         <div className="navbar-inner">
           <Link href="/" className="navbar-logo" style={{ whiteSpace: 'nowrap' }}>
-            <span className="gradient-text">REEL</span>CRAFT
+            REELCRAFT
           </Link>
 
           <ul className="navbar-links">

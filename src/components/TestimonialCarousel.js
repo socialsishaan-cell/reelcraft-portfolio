@@ -38,7 +38,7 @@ export default function TestimonialCarousel() {
         <ScrollReveal>
           <div className="section-header">
             <span className="badge badge-accent">Testimonials</span>
-            <h2>Client <span className="gradient-text">Voices</span></h2>
+            <h2>Client Voices</h2>
           </div>
         </ScrollReveal>
 

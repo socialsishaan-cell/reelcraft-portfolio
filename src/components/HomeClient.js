@@ -29,7 +29,7 @@ export default function HomeClient({ featured = [] }) {
             <div className="section-header">
               <span className="badge badge-accent">Featured Work</span>
               <h2 style={{ marginTop: '16px' }}>
-                Selected <span className="gradient-text">Projects</span>
+                Selected Projects
               </h2>
               <p>
                 A curated selection of recent work across commercials, music videos,

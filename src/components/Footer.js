@@ -45,13 +45,11 @@ const socialIcons = [
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-glow" aria-hidden="true" />
-      <div className="footer-divider-animated" aria-hidden="true" />
       <div className="container">
         <div className="footer-grid">
           <ScrollReveal delay={0.1}>
             <div className="footer-brand">
-              <h3><span className="gradient-text">REEL</span>CRAFT</h3>
+              <h3>REELCRAFT</h3>
               <p>
                 Crafting compelling visual stories through expert video editing,
                 colour grading, and motion design. Let&apos;s bring your vision to life.

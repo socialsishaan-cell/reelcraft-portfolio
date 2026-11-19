@@ -4,29 +4,65 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
-import MagneticButton from '@/components/MagneticButton';
+
+/* Clean inline stroke icons (16-18px, 1.5 stroke) */
+const IconFilm = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18M17 3v18M3 7h4M17 7h4M3 12h18M3 17h4M17 17h4"/>
+  </svg>
+);
+
+const IconSliders = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M4 6h10M18 6h2M4 12h4M10 12h10M4 18h13M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="7" cy="12" r="2"/><circle cx="17" cy="18" r="2"/>
+  </svg>
+);
+
+const IconLayers = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+  </svg>
+);
+
+const IconAudio = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M3 12h2l2-7 3 14 3-10 2 5h2M19 12h2"/>
+  </svg>
+);
+
+const IconSpark = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>
+  </svg>
+);
+
+const IconGrid = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/>
+  </svg>
+);
 
 export default function AboutClient() {
   const skills = [
-    { icon: '✂️', title: 'Video Editing', desc: 'Expert cutting, pacing, and narrative assembly in Premiere Pro, DaVinci Resolve, and Final Cut Pro.' },
-    { icon: '🎨', title: 'Color Grading', desc: 'Professional color correction and cinematic grading using DaVinci Resolve and custom LUTs.' },
-    { icon: '✨', title: 'Motion Graphics', desc: 'Dynamic titles, lower thirds, and animated elements crafted in After Effects.' },
-    { icon: '🔊', title: 'Sound Design', desc: 'Audio mixing, sound effects layering, and music synchronization for immersive experiences.' },
-    { icon: '🎭', title: 'Visual Effects', desc: 'Compositing, rotoscoping, and visual effects using Nuke and After Effects.' },
-    { icon: '📐', title: 'Storyboarding', desc: 'Pre-visualization and story planning to ensure efficient shoots and cohesive narratives.' },
+    { Icon: IconFilm, title: 'Video Editing', desc: 'Narrative cutting, pacing, and assembly in Premiere Pro, DaVinci Resolve, and Final Cut Pro.' },
+    { Icon: IconSliders, title: 'Color Grading', desc: 'Professional color correction and cinematic grading matching look bibles in DaVinci Resolve.' },
+    { Icon: IconLayers, title: 'Motion Graphics', desc: 'Dynamic titles, lower thirds, and animated overlays crafted in After Effects.' },
+    { Icon: IconAudio, title: 'Sound Design', desc: 'Audio mixing, dialogue cleanup, sound effects layering, and music synchronisation.' },
+    { Icon: IconSpark, title: 'Visual Effects', desc: 'Compositing, screen replacement, rotoscoping, and cleanup in After Effects and Nuke.' },
+    { Icon: IconGrid, title: 'Storyboarding', desc: 'Pacing consultation and pre-edit breakdown to ensure cohesive narrative flow.' },
   ];
 
   const tools = [
-    { icon: '🎬', name: 'Premiere Pro' },
-    { icon: '🎨', name: 'DaVinci Resolve' },
-    { icon: '✨', name: 'After Effects' },
-    { icon: '🖥️', name: 'Final Cut Pro' },
-    { icon: '💎', name: 'Nuke' },
-    { icon: '🔮', name: 'Cinema 4D' },
-    { icon: '🎵', name: 'Audition' },
-    { icon: '📸', name: 'Photoshop' },
-    { icon: '🖌️', name: 'Illustrator' },
-    { icon: '📊', name: 'TouchDesigner' },
+    { category: 'NLE', name: 'Premiere Pro' },
+    { category: 'Color', name: 'DaVinci Resolve' },
+    { category: 'Motion', name: 'After Effects' },
+    { category: 'NLE', name: 'Final Cut Pro' },
+    { category: 'VFX', name: 'Nuke' },
+    { category: '3D', name: 'Cinema 4D' },
+    { category: 'Audio', name: 'Audition' },
+    { category: 'Design', name: 'Photoshop' },
+    { category: 'Vector', name: 'Illustrator' },
+    { category: 'Generative', name: 'TouchDesigner' },
   ];
 
   return (
@@ -36,58 +72,52 @@ export default function AboutClient() {
         <div className="about-hero">
           <ScrollReveal>
             <div className="about-image profile-image-container">
-              <div className="gradient-border" />
               <Image
                 src="/profile.jpeg"
-                alt="Ishaan — Video Editor & Visual Storyteller"
+                alt="Ishaan — Video Editor"
                 fill
-                style={{ objectFit: 'cover', borderRadius: 'calc(var(--radius-xl) - 2px)' }}
+                style={{ objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
                 sizes="(max-width: 1024px) 400px, 50vw"
                 priority
               />
             </div>
           </ScrollReveal>
+
           <div className="about-text">
             <ScrollReveal delay={0.1}>
-              <span className="badge badge-accent">About Me</span>
+              <span className="badge">About</span>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <h1 style={{ marginTop: '16px' }}>
-                I&apos;m a <span className="gradient-text">Visual Storyteller</span>
+                I&apos;m a visual storyteller
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p>
-                With over 3 years of experience in video editing, I&apos;ve worked with
-                creators, brands, and businesses to bring their stories to life through compelling visuals.
+                With over 3 years of focused cutting behind the timeline, I partner with
+                directors, creators, and brands to turn raw footage into compelling visual narratives.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4}>
               <p>
-                My approach combines technical precision with artistic intuition. Every cut,
-                transition, and color choice serves the story. Whether it&apos;s a 15-second
-                social reel or a full brand film, I believe in giving each project
-                the meticulous attention it deserves.
+                My approach combines technical precision with narrative intuition. Every cut,
+                transition, and color grade serves the story. Whether it&apos;s a fast-paced
+                social campaign or a long-form brand film, each project gets deliberate craft.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.5}>
               <p>
-                I work with clients across India and beyond — helping them create content
-                that makes an impact on the audience, not on their wallet.
+                Based in Mumbai, working with clients across India and internationally.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.6}>
               <div style={{ display: 'flex', gap: '12px', marginTop: '24px' }}>
-                <MagneticButton>
-                  <Link href="/portfolio" className="btn btn-primary" data-cursor="Explore">
-                    View My Work →
-                  </Link>
-                </MagneticButton>
-                <MagneticButton>
-                  <Link href="/contact" className="btn btn-outline" data-cursor="Contact">
-                    Let&apos;s Talk
-                  </Link>
-                </MagneticButton>
+                <Link href="/portfolio" className="btn btn-primary">
+                  View Work →
+                </Link>
+                <Link href="/contact" className="btn btn-outline">
+                  Get in Touch
+                </Link>
               </div>
             </ScrollReveal>
           </div>
@@ -99,31 +129,23 @@ export default function AboutClient() {
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
-              <span className="badge badge-accent">Expertise</span>
+              <span className="badge">Expertise</span>
               <h2 style={{ marginTop: '16px' }}>
-                Skills & <span className="gradient-text">Capabilities</span>
+                Skills &amp; Capabilities
               </h2>
-              <p>A comprehensive skill set honed over years of diverse projects and continuous learning.</p>
+              <p>Practical post-production skills refined through client deliveries.</p>
             </div>
           </ScrollReveal>
           <div className="skills-grid">
             {skills.map((skill, i) => (
-              <ScrollReveal key={skill.title} delay={i * 0.08}>
-                <motion.div
-                  className="skill-card"
-                  whileHover={{ y: -4, boxShadow: '0 0 40px rgba(155, 122, 240, 0.15)' }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <motion.div
-                    className="skill-icon"
-                    animate={{ y: [0, -4, 0] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: i * 0.1 }}
-                  >
-                    {skill.icon}
-                  </motion.div>
+              <ScrollReveal key={skill.title} delay={i * 0.05}>
+                <div className="skill-card">
+                  <div className="skill-icon">
+                    <skill.Icon />
+                  </div>
                   <h3>{skill.title}</h3>
                   <p>{skill.desc}</p>
-                </motion.div>
+                </div>
               </ScrollReveal>
             ))}
           </div>
@@ -135,24 +157,20 @@ export default function AboutClient() {
         <div className="container">
           <ScrollReveal>
             <div className="section-header">
-              <span className="badge badge-accent">Toolkit</span>
+              <span className="badge">Toolkit</span>
               <h2 style={{ marginTop: '16px' }}>
-                Software & <span className="gradient-text">Tools</span>
+                Software &amp; Tools
               </h2>
-              <p>The industry-leading tools I use to deliver professional results on every project.</p>
+              <p>Industry-standard suites for editing, color science, and motion.</p>
             </div>
           </ScrollReveal>
           <div className="tools-grid">
             {tools.map((tool, i) => (
-              <ScrollReveal key={tool.name} delay={i * 0.05}>
-                <motion.div
-                  className="tool-item"
-                  whileHover={{ y: -3, scale: 1.02 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="tool-icon">{tool.icon}</div>
+              <ScrollReveal key={tool.name} delay={i * 0.04}>
+                <div className="tool-item">
+                  <span className="tool-category">{tool.category}</span>
                   <div className="tool-name">{tool.name}</div>
-                </motion.div>
+                </div>
               </ScrollReveal>
             ))}
           </div>
@@ -163,17 +181,15 @@ export default function AboutClient() {
       <section className="section" style={{ background: 'var(--bg-secondary)', textAlign: 'center' }}>
         <div className="container">
           <ScrollReveal>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 2.5rem)', fontWeight: 700, marginBottom: '16px' }}>
-              Ready to create something <span className="gradient-text">amazing</span>?
+            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.5rem)', fontWeight: 600, marginBottom: '16px' }}>
+              Ready to start your next edit?
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', marginBottom: '32px', maxWidth: '480px', margin: '0 auto 32px' }}>
-              Let&apos;s discuss your project and see how we can bring your vision to life together.
+              Let&apos;s discuss your project timelines, deliverables, and vision.
             </p>
-            <MagneticButton>
-              <Link href="/contact" className="btn btn-primary btn-lg" data-cursor="Let's Talk">
-                Get In Touch →
-              </Link>
-            </MagneticButton>
+            <Link href="/contact" className="btn btn-primary btn-lg">
+              Get in Touch →
+            </Link>
           </ScrollReveal>
         </div>
       </section>

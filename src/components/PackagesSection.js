@@ -79,7 +79,7 @@ export default function PackagesSection() {
           <div className="section-header">
             <span className="badge badge-accent">Packages</span>
             <h2 style={{ marginTop: '16px' }}>
-              Packages &amp; <span className="gradient-text">Quotation</span>
+              Packages &amp; Quotation
             </h2>
             <p>
               Flexible packages tailored to your content needs. From a single
